@@ -11,7 +11,7 @@ resource "aws_security_group" "mysg" {
         ingress {
                 description = "Allow ssh inbound traffic"
                 from_port = var.port_in
-                to.port = var.port_out
+                to_port = var.port_out
                 protocol = "tcp"
                 cidr_blocks = [var.cidr_block]
 }
