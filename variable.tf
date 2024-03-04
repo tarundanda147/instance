@@ -27,3 +27,7 @@ variable "cidr_block" {
   description = "The CIDR range"
   type = string
 }
+variable  "bucket_name" {
+  description = "enter the bucket name"
+  type = string
+}
