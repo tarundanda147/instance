@@ -1,5 +1,5 @@
 resource "aws_instance" "ec2-instance" {
-        aim = var.ami_id
+        ami = var.ami_id
         instance_type = var.instance_type
         vpc_security_group_ids = [aws_security_group.mysg.id]
 }
