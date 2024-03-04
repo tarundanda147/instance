@@ -10,23 +10,6 @@ variable "instance_type" {
   //default = "t2.micro"
 }
 
-variable "vpc_id" {
-  description = "the default VPC of the region"
-  type = string
-}
-variable "port_in" {
-  description = "SSH port value"
-  type = number
-}
-
-variable "port_out" {
-  description = "SSH port value"
-  type = number
-}
-variable "cidr_block" {
-  description = "The CIDR range"
-  type = string
-}
 variable  "bucket_name" {
   description = "enter the bucket name"
   type = string
